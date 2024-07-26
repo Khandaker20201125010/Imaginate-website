@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Enterpages.css */
+
+.logoAnimation {
+    animation: slideDown 1s ease-out;
+  }
+  
+  .textAnimation {
+    animation: slideUp 1s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes popInOut {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  
+  .textAnimation {
+    animation: popInOut 5s ease-in-out infinite; /* Loop the popInOut animation */
+  }
+  .textAnimation:hover {
+    animation: none; /* Disable animation on hover */
+    opacity: 1; /* Keep it visible */
+    transform: scale(1); /* Reset scale */
+  }
+  
+  /* Enterpages.css */
+
+.gradient-text {
+    background: linear-gradient(to right, #00ff00, #ffffff, #00ff00); /* Green to white to green gradient */
+    -webkit-background-clip: text; /* For Chrome, Safari */
+    background-clip: text; /* For other browsers */
+    color: transparent; /* Hide the text color */
+  }
+ 
+  
