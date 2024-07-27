@@ -69,7 +69,7 @@ const Nav = () => {
     );
 
     return (
-        <div className="navbar lg:fixed lg:z-10 md:fixed md:z-10 bg-opacity-30 w-full bg-black font-bold text-white">
+        <div className="navbar nav-bg lg:fixed lg:z-10 md:fixed md:z-10 bg-opacity-30 w-full bg-black font-bold text-white">
             
             <div className="navbar-start">
                 <div className="dropdown text-black w-5">

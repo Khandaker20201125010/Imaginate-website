@@ -12,6 +12,7 @@ import Home from './Components/Home/Home';
 import Authprovider from './Components/Providers/Authprovider';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import Privetroot from './Components/Privetroot/Privetroot';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/home',
-        element:<Home></Home>
+        element:<Privetroot><Home></Home></Privetroot>
 
       },
       {
@@ -46,3 +47,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
      <Authprovider><RouterProvider router={router} /></Authprovider>
   </React.StrictMode>,
 )
+
