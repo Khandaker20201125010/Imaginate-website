@@ -18,7 +18,7 @@ const Enterpages = () => {
   return (
     <>
      
-    <div className='bg-gradient-to-r from-indigo-600 min-h-screen relative'>
+    <div className='bg-gradient-to-r from-blue-900 min-h-screen relative'>
        <ParticleBg></ParticleBg>
       <div className='flex flex-col items-center justify-center p-20'>
         <img src={logo} alt="Logo" className='animate__animated animate__bounceInDown' />

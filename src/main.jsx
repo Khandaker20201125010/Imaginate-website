@@ -9,6 +9,9 @@ import {
 import Mainone from './Components/Layoutone/Mainone';
 import Enterpages from './Components/Enterpages/Enterpages';
 import Home from './Components/Home/Home';
+import Authprovider from './Components/Providers/Authprovider';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,12 +27,22 @@ const router = createBrowserRouter([
         element:<Home></Home>
 
       },
+      {
+        path:'/login',
+        element:<Login></Login>
+
+      },
+      {
+        path:'/register',
+        element:<Register></Register>
+
+      },
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+     <Authprovider><RouterProvider router={router} /></Authprovider>
   </React.StrictMode>,
 )
