@@ -40,7 +40,7 @@ const Nav = () => {
                     className={({ isActive }) =>
                         isActive ? 'btn btn-outline bg-gradient-to-r from-violet-950 to-blue-900 hover:bg-blue-800 text-white' : 'font-bold'
                     }
-                    to='/'
+                    to='/home'
                 >
                     Home
                 </NavLink>
@@ -50,7 +50,7 @@ const Nav = () => {
                     className={({ isActive }) =>
                         isActive ? 'btn btn-outline bg-gradient-to-r from-violet-950 to-blue-900  hover:bg-blue-800 text-white' : 'font-bold'
                     }
-                    to="/Meals"
+                    to="/members"
                 >
                    Members
                 </NavLink>
@@ -60,16 +60,16 @@ const Nav = () => {
                     className={({ isActive }) =>
                         isActive ? 'btn btn-outline bg-gradient-to-r from-violet-950 to-blue-900  hover:bg-blue-800 text-white' : 'font-bold'
                     }
-                    to="/UpcomingMeals"
+                    to="/aboutUs"
                 >
-                    Upcoming Meals
+                    About us
                 </NavLink>
             </li>
         </>
     );
 
     return (
-        <div className="navbar nav-bg lg:fixed lg:z-10 md:fixed md:z-10 bg-opacity-30 w-full bg-black font-bold text-white">
+        <div className="navbar lg:fixed lg:z-10 md:fixed md:z-10  w-full bg-gradient-to-r from-indigo-950 to-transparent font-bold text-white">
             
             <div className="navbar-start">
                 <div className="dropdown text-black w-5">
