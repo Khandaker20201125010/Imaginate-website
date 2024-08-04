@@ -75,7 +75,7 @@
 }
 
 .animated-bg {
-  background: linear-gradient(270deg, #1dff56, #fe0000,#2652d4);
+  background: linear-gradient(270deg, #280842, #000000,#2652d4);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
 }
@@ -195,7 +195,7 @@ body.menu-toggled > .meta-link > span {
   object-fit: cover; /* Ensures the images cover the entire area without distortion */
 }
 .about-us-container {
-  display: flex;
+ 
   justify-content: center;
   align-items: center;
   padding: 50px;
@@ -289,6 +289,13 @@ body.menu-toggled > .meta-link > span {
   background-clip: text; /* For other browsers */
   color: transparent; /* Make the text color transparent */
   -webkit-text-fill-color: rgb(102, 0, 0); /* Make the text color red in WebKit browsers */
+}
+.ex {
+  background-image: url('./assets/images/distortion-screen-game-wallpaper-with-error-message_508524-15.jpg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image horizontally and vertically */
+  width: 100%;
+  height: 100vh; /* Sets the height of the element to be 100% of the viewport height */
 }
 
 

@@ -14,10 +14,13 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Privetroot from './Components/Privetroot/Privetroot';
 import AboutUs from './Components/Aboutus/AboutUs';
+import MemberShow from './Components/MembersShow/MemeberShow';
+import Error from './Components/Error/Error';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Mainone></Mainone>,
+    errorElement:<Error></Error>,
     children:[
       {
         path:'/',
@@ -41,7 +44,12 @@ const router = createBrowserRouter([
       },
       {
         path:'/aboutUs',
-        element:<AboutUs></AboutUs>
+        element:<Privetroot><AboutUs></AboutUs></Privetroot>
+
+      },
+      {
+        path:'/members',
+        element:<Privetroot><MemberShow></MemberShow></Privetroot>
 
       },
     ]

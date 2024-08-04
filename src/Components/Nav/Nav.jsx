@@ -69,7 +69,7 @@ const Nav = () => {
     );
 
     return (
-        <div className="navbar lg:fixed lg:z-10 md:fixed md:z-10  w-full bg-gradient-to-r from-indigo-950 to-transparent font-bold text-white">
+        <div className="navbar  w-full bg-gradient-to-r from-indigo-950 to-transparent font-bold text-white">
             
             <div className="navbar-start">
                 <div className="dropdown text-black w-5">
