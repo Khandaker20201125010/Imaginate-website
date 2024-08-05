@@ -35,7 +35,7 @@ const Login = () => {
     const navigate = useNavigate();
     const axiosPublic = useAxiosPublic();
 
-    const handleLogin = e => {
+    const handleLogin = async (e)=> {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
@@ -51,7 +51,7 @@ const Login = () => {
                     
                 };
 
-                axiosPublic.post('/users', userInfo)
+                const res = axiosPublic.post('/users', userInfo)
                     .then(res => {
                         navigate(location.state?.from || '/home');
                         if (res.data.insertedId) {
